@@ -1,0 +1,156 @@
+body{
+    margin: 0px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin-top: 90px;
+}
+
+header{
+    position: fixed;
+    top: 0px;
+    width: 100%;
+    background-color: #001f3f;
+}
+
+h1 {
+    margin: 0px;
+    padding-top: 15px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+ul {
+    background-color: #92A8D1;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+ul li a{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    height: 25px;
+    font-size: large;
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+ul li a:hover{
+    cursor: pointer;
+    transform: scale(1.6);
+    transition-duration: 1s;
+}
+.image{
+    height: 200px;
+}
+
+.image_large{
+    height: 200px;
+}
+
+.flex_container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-around;
+    width: 100%;
+}
+
+img{
+    transition: ease 0.5s;
+}
+
+img:hover{
+    transform: scale(1.5);
+
+}
+.countries {
+    margin-top: 110px;
+    display: flex;
+    justify-content: space-around;
+    background-color: #92A8D1;
+}
+.countries div {
+    color: black;
+    margin: 10px;
+    font-size: large;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+
+}
+.countries div.selected {
+    font-weight: bold;
+}
+.countries div:hover {
+    cursor: pointer;
+    transform: scale(1.5);
+    transition-duration: 1s;
+}
+footer {
+    background-color: #001f3f;
+    border-style: groove;
+    height: 20px;
+}
+footer div {
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    color: honeydew;
+    font-size: large;
+    text-align: center;
+}
+.introduction {
+    border-color: rgb(73, 73, 151);
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    margin-top: 15px;
+    border-style: groove;
+    text-align: center;
+    padding-bottom: 15px;
+}
+button {
+    background-color: #92A8D1;
+    color: black;
+    font-style: bold;
+    border-style: groove;
+}
+.introduction div {
+    text-align: left;
+    margin: 15px;
+}
+h5 {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+
+    header {
+        background-color: white;
+    }
+    h1 {
+        display: none;
+    }
+    ul {
+        background-color: white;
+    }
+    ul li a {
+        display: block;
+        margin: 0px;
+        background-color: white;
+    }
+    h5 {
+        display: block;
+    }
+    .countries {
+        display: none;
+    }
+    .flex_container {
+        display: none;
+    }
+    .introduction {
+        display: none;
+    }
+    footer {
+        display: none;
+    }
+  }

@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Welcome</title>
+<link rel="stylesheet" href="index.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+
+<body>
+
+    <header>
+        <h5>You can choose below this list.</h5>
+        <h1>BAYRAK Car Gallery</h1>
+        <ul class="main_list">
+            <li><a href="Index.html" target="_blank">Home</a></li>
+            <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+        </ul>
+    </header>
+
+<div class="countries">
+    <div class="selected">All</div>
+    <div >Japaniesse</div>
+    <div >German</div>
+    <div >Italian</div>
+    <div >French</div>
+</div>
+
+<div class="flex_container">
+
+    <img class="image All Blue , Japaniesse" src="images_me/image1.png" alt="Image 1" title="Honda Civic 1.6"/>
+    <img class="image All Yellow , Italian" src="images_me/image2.png" alt="Image 1" title="Ferrari F240"/>
+    <img class="image All Gray , German" src="images_me/image3.png" alt="Image 1" title="Mercedes-Benz GLE200"/>
+    <img class="image All Blue , Italian" src="images_me/image4.png" alt="Image 1" title="Ferrari F350"/>
+    <img class="image All Red , French" src="images_me/image5.png" alt="Image 1" title="Mustang GT"/>
+    <img class="image All Red , German" src="images_me/image6.png" alt="Image 1" title="Audi A4"/>
+    <img class="image All Red , German" src="images_me/image7.png" alt="Image 1" title="BMW I8"/>
+    
+</div>
+<div class="introduction">
+
+    <h2>Welcome to Our Car Gallery</h2>
+    <h3>For entering the gallery press the button</h3>
+    <button onclick="document.location='Gallery.html'" >Click Here</button>
+    <div id="information1"></div>
+</div>
+<footer>
+    <div>All rights reserved - Atakan BAYRAK</div>
+</footer>
+</body>
+
+<script>
+    $(".countries div").click(function(){
+        
+        $(this).addClass("countries").siblings().removeClass("countries");
+        $(".image").hide().filter("."+this.innerHTML).show();
+    });
+</script>
+</html>

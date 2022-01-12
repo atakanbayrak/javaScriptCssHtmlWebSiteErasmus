@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Gallery</title>
+<link rel="stylesheet" href="gallery.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+</head>
+<body>
+
+    <header>
+      <h5>You can choose below this list.</h5>
+        <h1>BAYRAK Car Gallery</h1>
+        <ul class="main_list">
+            <li><a href="Index.html" target="_blank">Home</a></li>
+            <li><a href="Gallery.html" target="_blank">Gallery</a></li>
+            <li><a href="about.html" target="_blank">About</a></li>
+        </ul>
+    </header>
+    <div class="introduction">
+        <h2>Welcome to Our Car Gallery</h2>
+        <h3>For more information about us please click the button</h3>
+        <button onclick="document.location='About.html'" >Click Here</button>
+        <h3>You can also watch our slideshow of our showroom</h3>
+        <h3 class="info">*For more information about cars please visit our showroom*</h3>
+       
+    
+        <div id="information1"></div>
+    </div>
+    <div class="slideshow-container">
+
+        
+        <div class="mySlides fade">
+          <div class="numbertext">1 / 3</div>
+          <img src="images_me/image1.png" style="width: 50%;">
+          <img src="images_me/image2.png" style="width:40%">
+        </div>
+      
+        <div class="mySlides fade" style="display: flex;">
+          <div class="numbertext">2 / 3</div>
+          <img src="images_me/image7.png" style="width:47%">
+          <img src="images_me/image4.png" style="width:45%">
+          
+        </div>
+      
+        <div class="mySlides fade">
+          <div class="numbertext">3 / 3</div>
+          <img src="images_me/image8.png" style="width:55%">
+          <img src="images_me/image6.png" style="width:40%">
+         
+        </div>
+      </div>
+      <div class="descriptions1">
+        <div class="description1">Honda Civic 1.6 105 HP<row style="color: rgb(70, 73, 209); font-style: bold; " > 4000 USD</row></div>
+        <div class="description2">Ferrari F240 5.0 550 HP<row style="color: rgb(70, 73, 209); font-style: bold; ">  50000 USD</row></div>
+        <div class="description3">BMW I8 4.0 250 HP<row style="color: rgb(70, 73, 209); font-style: bold; ">  32000 USD</row></div>
+        <div class="description4">Audi A4 3.0 125 HP<row style="color: rgb(70, 73, 209); font-style: bold;"> 7500 USD</row></div>
+      </div>
+      <div class="descriptions2">
+        <div class="description1">Japaniesse's cars are for tasters in car industry. They are comfortable, cool and low budget.<row style="color: rgb(202, 0, 0); font-style: bold;">  HONDA brand is avaliable in our gallery right now!</row></div>
+        <div class="description2">Italian's cars are the fastest ones and they are the most expensive ones at the same time.<row style="color: rgb(202, 0, 0); font-style: bold;">  FERRARI brand is avaliable in our gallery right now!</row></div>
+        <div class="description3">German's cars are for safe driving. They are popular with their safe and clean airbag products.<row style="color: rgb(202, 0, 0); font-style: bold;">  AUDI,BMW brand is avaliable in our gallery right now!</row></div>
+        <div class="description4">French's cars are more economic and they need a little bit more bugget then Italian ones.<row style="color: rgb(202, 0, 0); font-style: bold;">  No car is avaliable in our gallery right now!</row></div>
+      </div>
+<script>  
+  var slideIndex = 0;
+  showSlides();
+
+  function showSlides() {
+    var i;
+    var slides = document.getElementsByClassName("mySlides");
+    for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > slides.length) {slideIndex = 1}
+    slides[slideIndex-1].style.display = "block";
+    setTimeout(showSlides, 3000); 
+  }
+</script>
+<footer>
+    <div>All rights reserved - Atakan BAYRAK</div></footer>
+</body>
+</html>

@@ -1,0 +1,90 @@
+
+h1 {
+    margin: 0px;
+    padding-top: 15px;
+    color: white;
+    font-size: 35px;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-align: center;
+}
+header {
+    width: 100%;
+    background-color: #001f3f;
+}
+ul {
+    background-color: #92A8D1;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+ul li {
+    display: inline-block;
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+ul li a{
+    color: black;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    text-decoration: none;
+    height: 25px;
+    font-size: large;
+    display: inline-block;
+    margin-top: 0px;
+    margin-right: 150px;
+    margin-left: 150px;
+}
+
+ul li a:hover{
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+    cursor: pointer;
+    transform: scale(1.6);
+    transition-duration: 1s;
+}
+ul li a:link:visited{
+    text-decoration: none;
+}
+
+.about {
+    background-color: whitesmoke;
+    text-align: center;
+    border-style: groove;
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+.logo:hover {
+    transform: scale(5.4);
+    cursor: pointer;
+    transition-duration: 1s;
+}
+.cofounder:hover {
+    transform: scale(1.2);
+    cursor: pointer;
+    transition-duration: 2s;
+}
+h5 {
+    display: none;
+}
+@media screen and (max-width: 600px) {
+
+    header {
+        background-color: white;
+    }
+    h1 {
+        display: none;
+    }
+    ul {
+        background-color: white;
+    }
+    ul li a {
+        display: block;
+        margin: 0px;
+        background-color: white;
+    }
+    .about{
+      display: none;
+    }
+    h5 {
+        background-color: white;
+        display: block;
+    }
+
+  }
